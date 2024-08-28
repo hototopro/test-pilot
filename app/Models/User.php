@@ -21,6 +21,8 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'lastLoginAt',
+        'lastFlightScore',
     ];
 
     /**
@@ -40,5 +42,7 @@ class User extends Authenticatable
      */
     protected $casts = [
         'email_verified_at' => 'datetime',
+        'lastLoginAt' => 'datetime',
+        'lastFlightScore' => 'datetime',
     ];
 }
